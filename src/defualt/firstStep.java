@@ -1,32 +1,58 @@
 package defualt;
 
+import java.util.Scanner;
+
 public class firstStep {
 
     public static void main(String[] args) {
 
-        int a;
+        Scanner sc = new Scanner(System.in);
+        int opcion;
 
-        int x, y;
+        do {
+            System.out.println("===== PRACTICAS JAVA =====");
+            System.out.println("1. Conversiones (profesorQ.conversiones)");
+            System.out.println("2. Suma y promedio de 10 numeros");
+            System.out.println("3. Menor y mayor de 10 numeros");
+            System.out.println("4. Multiplos de un divisor en 10 numeros");
+            System.out.println("5. Buscar un numero en un arreglo de 10");
+            System.out.println("6. Operaciones con dos matrices 3x3");
+            System.out.println("0. Salir");
+            System.out.print("Elige una opcion: ");
 
-        double x1 = 1.5;
+            opcion = sc.nextInt();
 
-        double x2 = 2.5, y2 = 3.5;
+            switch (opcion) {
+                case 1:
+                    profesorQ p = new profesorQ();
+                    p.conversiones();
+                    break;
+                case 2:
+                    Practicas.ejercicio1(sc);
+                    break;
+                case 3:
+                    Practicas.ejercicio2(sc);
+                    break;
+                case 4:
+                    Practicas.ejercicio3(sc);
+                    break;
+                case 5:
+                    Practicas.ejercicio4(sc);
+                    break;
+                case 6:
+                    Practicas.ejercicio5(sc);
+                    break;
+                case 0:
+                    System.out.println("Saliendo...");
+                    break;
+                default:
+                    System.out.println("Opcion no valida");
+            }
 
-        int a1 = 5, b = 6, c = 7;
+            System.out.println();
+        } while (opcion != 0);
 
-        boolean sw = false;
-
-        String cad = null;
-
-        final double PI = 3.14;
-
-        System.out.println("x1 = " + x1);
-        System.out.println("x2 = " + x2);
-        System.out.println("y2 = " + y2);
-        System.out.println("PI = " + PI);
-
-        profesorQ s = new profesorQ();
-        s.conversiones();
-        s.decirHola();
+        sc.close();
     }
 }
+
