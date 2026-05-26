@@ -1,4 +1,4 @@
-package defualt;
+package defualt.ejercicio1;
 
 public class profesorQ {
 
@@ -7,7 +7,6 @@ public class profesorQ {
     }
 
     public void conversiones() {
-
 
         int a;
 

@@ -2,6 +2,9 @@ package defualt;
 
 import java.util.Scanner;
 
+import defualt.ejercicio1.profesorQ;
+import defualt.ejercicio2.Practicas;
+
 public class firstStep {
 
     public static void main(String[] args) {
@@ -23,10 +26,11 @@ public class firstStep {
             opcion = sc.nextInt();
 
             switch (opcion) {
-                case 1:
+                case 1: {
                     profesorQ p = new profesorQ();
                     p.conversiones();
                     break;
+                }
                 case 2:
                     Practicas.ejercicio1(sc);
                     break;
@@ -55,4 +59,3 @@ public class firstStep {
         sc.close();
     }
 }
-

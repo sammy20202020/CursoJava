@@ -1,10 +1,54 @@
-package defualt;
+package defualt.ejercicio2;
 
-/** Ejercicios 2-6 del libro: arreglos y matrices */
+import java.util.Scanner;
+
+/** Ejercicio 2: Arreglos y matrices del libro */
 public class Practicas {
 
-    // 1. Dados 10 numeros, suma y promedio
-    public static void ejercicio1(java.util.Scanner sc) {
+    public static void menu(Scanner sc) {
+        int opcion;
+
+        do {
+            System.out.println("--- EJERCICIO 2: Practicas.java ---");
+            System.out.println("1. Suma y promedio de 10 numeros");
+            System.out.println("2. Menor y mayor de 10 numeros");
+            System.out.println("3. Multiplos de un divisor en 10 numeros");
+            System.out.println("4. Buscar un numero en un arreglo de 10");
+            System.out.println("5. Operaciones con dos matrices 3x3");
+            System.out.println("0. Volver al menu principal");
+            System.out.print("Elige una opcion: ");
+
+            opcion = sc.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    ejercicio1(sc);
+                    break;
+                case 2:
+                    ejercicio2(sc);
+                    break;
+                case 3:
+                    ejercicio3(sc);
+                    break;
+                case 4:
+                    ejercicio4(sc);
+                    break;
+                case 5:
+                    ejercicio5(sc);
+                    break;
+                case 0:
+                    System.out.println("Volviendo al menu principal...");
+                    break;
+                default:
+                    System.out.println("Opcion no valida");
+            }
+
+            System.out.println();
+        } while (opcion != 0);
+    }
+
+    // 2.1 Suma y promedio de 10 numeros
+    public static void ejercicio1(Scanner sc) {
         double suma = 0;
 
         for (int i = 1; i <= 10; i++) {
@@ -18,12 +62,8 @@ public class Practicas {
         System.out.println("Promedio = " + promedio);
     }
 
-    
-    
-    
-    
-    // 2. Menor y mayor de 10 numeros
-    public static void ejercicio2(java.util.Scanner sc) {
+    // 2.2 Menor y mayor de 10 numeros
+    public static void ejercicio2(Scanner sc) {
         double menor = 0;
         double mayor = 0;
 
@@ -48,12 +88,8 @@ public class Practicas {
         System.out.println("Mayor = " + mayor);
     }
 
-    
-    
-    
-    
-    // 3. Multiplos de un divisor en 10 numeros
-    public static void ejercicio3(java.util.Scanner sc) {
+    // 2.3 Multiplos de un divisor en 10 numeros
+    public static void ejercicio3(Scanner sc) {
         System.out.print("Ingresa el divisor: ");
         int divisor = sc.nextInt();
 
@@ -70,11 +106,8 @@ public class Practicas {
         }
     }
 
-    
-    
-    
-    // 4. Buscar un numero en un arreglo de 10
-    public static void ejercicio4(java.util.Scanner sc) {
+    // 2.4 Buscar un numero en un arreglo de 10
+    public static void ejercicio4(Scanner sc) {
         int[] datos = new int[10];
 
         System.out.println("Ingresa 10 numeros para el arreglo:");
@@ -103,14 +136,9 @@ public class Practicas {
             System.out.println("El numero no se encuentra en el arreglo.");
         }
     }
-    
-    
-    
-    
-    
 
-    // 5. Operaciones con dos matrices 3x3
-    public static void ejercicio5(java.util.Scanner sc) {
+    // 2.5 Operaciones con dos matrices 3x3
+    public static void ejercicio5(Scanner sc) {
         int[][] A = new int[3][3];
         int[][] B = new int[3][3];
 
@@ -133,18 +161,15 @@ public class Practicas {
         System.out.print("Ingresa un numero para multiplicar cada matriz: ");
         int k = sc.nextInt();
 
-        // Producto de cada matriz por k
         System.out.println("Matriz A * " + k + ":");
         imprimirMatriz(multiplicarPorEscalar(A, k));
 
         System.out.println("Matriz B * " + k + ":");
         imprimirMatriz(multiplicarPorEscalar(B, k));
 
-        // Suma de A y B
         System.out.println("A + B:");
         imprimirMatriz(sumarMatrices(A, B));
 
-        // Producto de A y B
         System.out.println("A * B:");
         imprimirMatriz(multiplicarMatrices(A, B));
     }
@@ -192,4 +217,3 @@ public class Practicas {
         }
     }
 }
-
