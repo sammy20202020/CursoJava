@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import defualt.ejercicio1.profesorQ;
 import defualt.ejercicio2.Practicas;
+import defualt.ejercicio3.EjercicioHerencia;
 
 public class firstStep {
 
@@ -20,6 +21,7 @@ public class firstStep {
             System.out.println("4. Multiplos de un divisor en 10 numeros");
             System.out.println("5. Buscar un numero en un arreglo de 10");
             System.out.println("6. Operaciones con dos matrices 3x3");
+            System.out.println("7. Herencia Mamifero, Perro y Gato (ejercicio3)");
             System.out.println("0. Salir");
             System.out.print("Elige una opcion: ");
 
@@ -45,6 +47,9 @@ public class firstStep {
                     break;
                 case 6:
                     Practicas.ejercicio5(sc);
+                    break;
+                case 7:
+                    EjercicioHerencia.ejecutar(sc);
                     break;
                 case 0:
                     System.out.println("Saliendo...");
