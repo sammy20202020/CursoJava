@@ -1,4 +1,4 @@
-package EJERCICIO4;
+package EJERCICIO4.parte3;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class Main {
         System.out.println();
         
         // Parte 1: Con Interface
-        EJERCICIO4.Perro perro1 = new EJERCICIO4.Perro(
+        EJERCICIO4.parte1.Perro perro1 = new EJERCICIO4.parte1.Perro(
             "Firulais", 
             "Pastor Alemán", 
             "Perro", 
@@ -15,7 +15,7 @@ public class Main {
             "Centro de entrenamiento canino"
         );
         
-        EJERCICIO4.Gato gato1 = new EJERCICIO4.Gato(
+        EJERCICIO4.parte1.Gato gato1 = new EJERCICIO4.parte1.Gato(
             "Michi", 
             "Siamés", 
             "Gato", 

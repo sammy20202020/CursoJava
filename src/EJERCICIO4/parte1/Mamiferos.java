@@ -1,4 +1,4 @@
-package EJERCICIO4;
+package EJERCICIO4.parte1;
 
 public class Mamiferos implements IMamiferos {
     private String nombre;

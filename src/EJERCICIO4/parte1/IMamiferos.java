@@ -1,4 +1,4 @@
-package EJERCICIO4;
+package EJERCICIO4.parte1;
 
 /**
  * Método Comunicarse, sera implementado por todas las clases concretas que
