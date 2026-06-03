@@ -1,4 +1,4 @@
-package EJERCICIO4.parte2;
+package defualt.EJERCICIO4.parte2;
 
 public class Perro extends Mamiferos {
     private String lugarEntrenamiento;

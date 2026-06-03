@@ -1,4 +1,4 @@
-package EJERCICIO4.parte3;
+package defualt.EJERCICIO4.parte3;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class Main {
         System.out.println();
         
         // Parte 1: Con Interface
-        EJERCICIO4.parte1.Perro perro1 = new EJERCICIO4.parte1.Perro(
+        defualt.EJERCICIO4.parte1.Perro perro1 = new defualt.EJERCICIO4.parte1.Perro(
             "Firulais", 
             "Pastor Alemán", 
             "Perro", 
@@ -15,7 +15,7 @@ public class Main {
             "Centro de entrenamiento canino"
         );
         
-        EJERCICIO4.parte1.Gato gato1 = new EJERCICIO4.parte1.Gato(
+        defualt.EJERCICIO4.parte1.Gato gato1 = new defualt.EJERCICIO4.parte1.Gato(
             "Michi", 
             "Siamés", 
             "Gato", 
@@ -52,7 +52,7 @@ public class Main {
         System.out.println();
         
         // Parte 2: Con Clase Abstracta
-        EJERCICIO4.parte2.Perro perro2 = new EJERCICIO4.parte2.Perro(
+        defualt.EJERCICIO4.parte2.Perro perro2 = new defualt.EJERCICIO4.parte2.Perro(
             "Rex", 
             "Golden Retriever", 
             "Perro", 
@@ -61,7 +61,7 @@ public class Main {
             "Escuela de perros"
         );
         
-        EJERCICIO4.parte2.Gato gato2 = new EJERCICIO4.parte2.Gato(
+        defualt.EJERCICIO4.parte2.Gato gato2 = new defualt.EJERCICIO4.parte2.Gato(
             "Pelusa", 
             "Persa", 
             "Gato", 
